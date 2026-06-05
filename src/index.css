@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    background-color: #060908;
+    color: #C9D1CC;
+  }
+}
+
+img {
+  object-position: top;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* ===== Reference terminal design system ===== */
+
+/* Neon text glows */
+.text-glow-green {
+  text-shadow: 0 0 8px rgba(0, 230, 118, 0.55), 0 0 24px rgba(0, 230, 118, 0.25);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.55), 0 0 24px rgba(34, 211, 238, 0.25);
+}
+
+.shadow-glow-green-sm {
+  box-shadow: 0 0 8px rgba(0, 230, 118, 0.3);
+}
+
+/* Terminal window card — bordered panel with a chrome title bar */
+.terminal-window {
+  position: relative;
+  background-color: rgba(11, 16, 13, 0.85);
+  border: 1px solid rgba(0, 230, 118, 0.14);
+  border-radius: 6px;
+  backdrop-filter: blur(2px);
+}
+
+.terminal-window:hover {
+  border-color: rgba(0, 230, 118, 0.35);
+}
+
+/* The "traffic light" chrome bar at the top of a terminal window */
+.terminal-chrome {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(0, 230, 118, 0.12);
+  background: linear-gradient(180deg, rgba(0, 230, 118, 0.05), transparent);
+}
+
+.terminal-chrome::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 9999px;
+  background: #ff5f56;
+  box-shadow: 18px 0 #ffbd2e, 36px 0 #00e676;
+  flex: 0 0 auto;
+  margin-right: 36px;
+}
+
+/* Faint blueprint grid background */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(0, 230, 118, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 230, 118, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* CRT scanline overlay — apply to a fixed full-screen layer */
+.scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 230, 118, 0.025) 2px,
+    rgba(0, 230, 118, 0.025) 4px
+  );
+}
+
+/* Custom animations for enhanced components */
+@keyframes grid-move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 6px rgba(0, 230, 118, 0.4); }
+  50% { box-shadow: 0 0 18px rgba(0, 230, 118, 0.8); }
+}
+
+.animate-grid-move {
+  animation: grid-move 20s linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Text truncation utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar for cyber theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00c853;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00e676;
+}

@@ -1,0 +1,196 @@
+export const HERO_CONTENT = "Infrastructure as code. CI/CD automation. Cloud-native architectures. Turning complex systems into reliable, observable, and scalable pipelines.";
+
+export const ABOUT_TEXT = "I'm a software engineering graduate specialized in Full Stack development and DevOps, ranked among the top of my class at TEK-UP University. Over nearly five years I've contributed to large-scale projects blending backend development and cloud industrialization. Committed to continuous improvement, I specialize in building robust CI/CD pipelines, observability with Prometheus/Grafana, and high-availability cloud environments on AWS, Azure, and Hetzner.";
+
+export const SKILLS = [
+  // Cloud
+  { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', category: 'cloud', level: 90 },
+  { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', category: 'cloud', level: 85 },
+  { name: 'Hetzner', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hetzner.svg', category: 'cloud', level: 85 },
+
+  // Containers & Orchestration
+  { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', category: 'containers', level: 90 },
+  { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', category: 'containers', level: 85 },
+
+  // Infrastructure as Code
+  { name: 'Terraform', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', category: 'infrastructure', level: 85 },
+  { name: 'Ansible', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg', category: 'infrastructure', level: 85 },
+
+  // Monitoring & Observability
+  { name: 'Prometheus', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg', category: 'monitoring', level: 85 },
+  { name: 'Grafana', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg', category: 'monitoring', level: 85 },
+  { name: 'Alertmanager', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg', category: 'monitoring', level: 80 },
+
+  // CI/CD & Automation
+  { name: 'GitHub Actions / GitLab CI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg', category: 'devops', level: 90 },
+  { name: 'Jenkins', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-plain.svg', category: 'devops', level: 85 },
+  { name: 'GitOps / ArgoCD', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg', category: 'devops', level: 85 },
+  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: 'devops', level: 90 },
+  { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg', category: 'devops', level: 90 },
+
+  // Backend Development
+  { name: 'Java / Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', category: 'development', level: 90 },
+  { name: 'Python / Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg', category: 'development', level: 85 },
+  { name: '.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg', category: 'development', level: 80 },
+
+  // Databases
+  { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', category: 'database', level: 85 },
+  { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', category: 'database', level: 90 },
+  { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', category: 'database', level: 85 },
+  { name: 'Oracle', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg', category: 'database', level: 80 },
+
+  // Security & Quality
+  { name: 'HashiCorp Vault', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg', category: 'security', level: 80 },
+  { name: 'Checkov / tfsec', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/checkmarx.svg', category: 'security', level: 80 },
+  { name: 'Unit / Integration Tests', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg', category: 'security', level: 90 },
+  { name: 'BDD / Load Testing', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg', category: 'security', level: 85 },
+];
+
+export const PROJECTS = [
+  {
+    title: 'Kubernetes HA Cluster',
+    image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Multi-node high-availability Kubernetes cluster provisioned with Terraform & Ansible on Hetzner/AWS. GitOps with ArgoCD, auto-scaling, health checks, and automatic rollback.',
+    technologies: ['Kubernetes', 'Terraform', 'Ansible', 'ArgoCD', 'Hetzner', 'AWS'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'Cloud CI/CD Pipeline',
+    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'End-to-end CI/CD pipeline on GitLab CI / GitHub Actions with parallelized stages: build, unit tests, BDD, static analysis, Terraform provisioning, and automatic deployment to AWS.',
+    technologies: ['GitLab CI', 'GitHub Actions', 'Terraform', 'Docker', 'AWS'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'Monitoring Stack',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Complete observability stack (Prometheus + Grafana + Alertmanager) deployed via Docker & Ansible. Pre-configured dashboards, automated alerting, and metric retention.',
+    technologies: ['Prometheus', 'Grafana', 'Alertmanager', 'Docker', 'Ansible'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'ClarieFile — SaaS Platform',
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'SaaS platform with an intelligent pipeline that scans, groups, and organizes unstructured data (PDFs, images, files) to produce structured digital exports: Excel, JSON, and databases.',
+    technologies: ['Python', 'Django', 'AI / ML', 'PostgreSQL', 'Docker'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'CRM & ERP Platform',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Full-stack CRM & ERP platform with modular services, role-based access, and analytics dashboards — built on Spring Boot, containerized with Docker, and shipped through CI/CD.',
+    technologies: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Docker'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'Hotel Booking — Ionic App',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Ionic mobile app for hotel room booking: availability search, real-time reservation, customer profile management, and push notifications.',
+    technologies: ['Ionic', 'Angular', 'Firebase', 'REST API'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
+];
+
+export const EXPERIENCE = [
+  {
+    period: '01/2023 — Present',
+    role: 'Full Stack & DevOps Developer',
+    company: 'XFlowData',
+    points: [
+      'Infrastructure & DevOps: migration of architectures to high-availability cloud environments; CI/CD pipelines and supervision (Prometheus / Grafana).',
+      'Data & AI: backend solutions and AI-based data-extraction tools, from database modeling to final deployment.',
+      'Full Stack: complex features (backend & application logic), including Unity modules integrated into cloud workflows.',
+      'Quality & automated testing: unit, integration, BDD, and load/performance strategies integrated into CI/CD.',
+    ],
+  },
+  {
+    period: '08/2021 — 01/2023',
+    role: 'Video Game & Web Developer',
+    company: 'Re:School Education',
+    points: [
+      'Built and optimized multiplayer educational games in 2D / 3D environments, handling game mechanics and interactivity.',
+      'Managed the full product lifecycle from cloud service configuration to deployment and maintenance on download platforms.',
+    ],
+  },
+  {
+    period: '03/2021 — 06/2021',
+    role: 'Intern — Final Year Project',
+    company: 'Re:School Education',
+    points: [
+      'Designed and delivered an interactive educational application published on the Play Store.',
+    ],
+  },
+  {
+    period: '08/2020 — 09/2020',
+    role: 'Intern — Advanced Training',
+    company: 'Les Ciments de Bizerte',
+    points: [
+      'Developed an embedded solution for motor control and energy management.',
+    ],
+  },
+  {
+    period: '01/2019 — 02/2019',
+    role: 'Intern — Introductory',
+    company: 'Tunisie Telecom',
+    points: [
+      'Explored network infrastructures and built a website.',
+    ],
+  },
+];
+
+export const EDUCATION = [
+  {
+    period: '2023 — 2026',
+    title: 'National Engineering Degree in Software Engineering',
+    school: 'TEK-UP University',
+  },
+  {
+    period: '2018 — 2021',
+    title: 'Bachelor in Information Technologies',
+    school: 'ISET Bizerte',
+  },
+];
+
+export const CERTIFICATIONS = [
+  { name: 'PCAP', full: 'Python Certified Associate Programmer', status: 'in progress' },
+  { name: 'OCA', full: 'Oracle Certified Associate', status: 'in progress' },
+  { name: 'CKA', full: 'Certified Kubernetes Administrator', status: 'in progress' },
+];
+
+export const CONTACT = {
+  address: 'Ariana, Tunisia',
+  phoneNo: '+216 51 996 304',
+  email: 'nassimbenmustpha99@gmail.com',
+  social: {
+    linkedin: 'https://linkedin.com/in/nassim-ben-mustapha-817648200',
+  }
+};
+
+export const SKILLS_BY_CATEGORY = {
+  cloud: SKILLS.filter(skill => skill.category === 'cloud'),
+  containers: SKILLS.filter(skill => skill.category === 'containers'),
+  infrastructure: SKILLS.filter(skill => skill.category === 'infrastructure'),
+  monitoring: SKILLS.filter(skill => skill.category === 'monitoring'),
+  devops: SKILLS.filter(skill => skill.category === 'devops'),
+  development: SKILLS.filter(skill => skill.category === 'development'),
+  database: SKILLS.filter(skill => skill.category === 'database'),
+  security: SKILLS.filter(skill => skill.category === 'security'),
+};
+
+export const PROJECTS_BY_CATEGORY = {
+  all: PROJECTS,
+  devops: PROJECTS.filter(project => project.category === 'devops'),
+  fullstack: PROJECTS.filter(project => project.category === 'fullstack'),
+};
