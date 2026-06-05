@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Terminal as TerminalIcon } from 'lucide-react';
+import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Layout, Smartphone, Terminal as TerminalIcon } from 'lucide-react';
 import { SKILLS_BY_CATEGORY } from '../data/portfolio';
 
 export const Skills = () => {
@@ -52,6 +52,20 @@ export const Skills = () => {
       icon: Code,
       skills: SKILLS_BY_CATEGORY.development,
       color: 'text-orange-500',
+    },
+    {
+      id: 'frontend',
+      title: 'Frontend Frameworks',
+      icon: Layout,
+      skills: SKILLS_BY_CATEGORY.frontend,
+      color: 'text-blue-400',
+    },
+    {
+      id: 'mobile',
+      title: 'Mobile Development',
+      icon: Smartphone,
+      skills: SKILLS_BY_CATEGORY.mobile,
+      color: 'text-purple-400',
     },
     {
       id: 'database',
@@ -136,6 +150,8 @@ export const Skills = () => {
                        SKILLS_BY_CATEGORY.monitoring.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.devops.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.development.find(s => s.name.toLowerCase() === skillName) ||
+                       SKILLS_BY_CATEGORY.frontend.find(s => s.name.toLowerCase() === skillName) ||
+                       SKILLS_BY_CATEGORY.mobile.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.database.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.security.find(s => s.name.toLowerCase() === skillName);
 

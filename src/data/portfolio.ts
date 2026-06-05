@@ -31,7 +31,17 @@ export const SKILLS = [
   // Backend Development
   { name: 'Java / Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', category: 'development', level: 90 },
   { name: 'Python / Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg', category: 'development', level: 85 },
+  { name: 'ASP.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg', category: 'development', level: 80 },
   { name: '.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg', category: 'development', level: 80 },
+
+  // Frontend
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', category: 'frontend', level: 90 },
+  { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg', category: 'frontend', level: 85 },
+
+  // Mobile
+  { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', category: 'mobile', level: 80 },
+  { name: 'Ionic', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg', category: 'mobile', level: 80 },
+  { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg', category: 'mobile', level: 80 },
 
   // Databases
   { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', category: 'database', level: 85 },
@@ -185,6 +195,8 @@ export const SKILLS_BY_CATEGORY = {
   monitoring: SKILLS.filter(skill => skill.category === 'monitoring'),
   devops: SKILLS.filter(skill => skill.category === 'devops'),
   development: SKILLS.filter(skill => skill.category === 'development'),
+  frontend: SKILLS.filter(skill => skill.category === 'frontend'),
+  mobile: SKILLS.filter(skill => skill.category === 'mobile'),
   database: SKILLS.filter(skill => skill.category === 'database'),
   security: SKILLS.filter(skill => skill.category === 'security'),
 };
