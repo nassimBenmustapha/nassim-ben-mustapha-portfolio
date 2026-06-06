@@ -10,7 +10,7 @@ export const Home = () => {
     { label: 'Years Experience', value: '5+' },
     { label: 'Cloud Platforms', value: '3' },
     { label: 'Projects Delivered', value: '50+' },
-    { label: 'Certifications (in progress)', value: '3' },
+    { label: 'Certifications', value: '10+' },
   ];
 
   const featuredSkills = SKILLS.slice(0, 6);

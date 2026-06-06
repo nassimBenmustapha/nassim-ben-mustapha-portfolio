@@ -210,10 +210,14 @@ export const About = () => {
                   <div key={cert.name} className="flex items-start justify-between gap-3">
                     <div>
                       <div className="font-mono text-sm text-neutral-100">{cert.name}</div>
-                      <div className="font-mono text-xs text-neutral-400">{cert.full}</div>
+                      <div className="font-mono text-xs text-neutral-400">{cert.issuer} · {cert.date}</div>
                     </div>
-                    <span className="shrink-0 font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-sm text-accent-500 border border-accent-500/30 bg-accent-500/5">
-                      {cert.status}
+                    <span className={`shrink-0 font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-sm border ${
+                      cert.status === 'completed'
+                        ? 'text-primary-500 border-primary-500/30 bg-primary/5'
+                        : 'text-accent-500 border-accent-500/30 bg-accent-500/5'
+                    }`}>
+                      {cert.status === 'completed' ? 'certified' : 'in progress'}
                     </span>
                   </div>
                 ))}

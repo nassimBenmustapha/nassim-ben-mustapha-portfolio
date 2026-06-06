@@ -204,9 +204,19 @@ export const EDUCATION = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: 'PCAP', full: 'Python Certified Associate Programmer', status: 'in progress' },
-  { name: 'OCA', full: 'Oracle Certified Associate', status: 'in progress' },
-  { name: 'CKA', full: 'Certified Kubernetes Administrator', status: 'in progress' },
+  // In progress (targeted)
+  { name: 'CKA — Certified Kubernetes Administrator', issuer: 'The Linux Foundation', date: 'In progress', status: 'in progress' },
+  { name: 'PCAP — Python Certified Associate', issuer: 'Python Institute', date: 'In progress', status: 'in progress' },
+  { name: 'OCA — Oracle Certified Associate', issuer: 'Oracle', date: 'In progress', status: 'in progress' },
+  // Completed
+  { name: 'Database Engineer', issuer: 'Meta', date: 'Nov 2022', status: 'completed' },
+  { name: 'Back-End Developer', issuer: 'Meta', date: 'Nov 2022', status: 'completed' },
+  { name: 'Front-End Developer', issuer: 'Meta', date: 'Nov 2022', status: 'completed' },
+  { name: 'Python', issuer: 'University of Michigan', date: 'Dec 2022', status: 'completed' },
+  { name: 'Flutter', issuer: 'Google Cloud Education', date: 'Dec 2022', status: 'completed' },
+  { name: 'IoT & Embedded Systems', issuer: 'UC Irvine', date: 'Dec 2022', status: 'completed' },
+  { name: 'Agile Development & Scrum', issuer: 'IBM', date: 'Dec 2022', status: 'completed' },
+  { name: 'Learning How to Learn', issuer: 'Coursera', date: 'Oct 2022', status: 'completed' },
 ];
 
 export const CONTACT = {
