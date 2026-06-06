@@ -6,6 +6,7 @@ export const SKILLS = [
   // Cloud
   { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', category: 'cloud', level: 90 },
   { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', category: 'cloud', level: 85 },
+  { name: 'Google Cloud (GCP)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg', category: 'cloud', level: 80 },
   { name: 'Hetzner', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hetzner.svg', category: 'cloud', level: 85 },
 
   // Containers & Orchestration
@@ -31,29 +32,58 @@ export const SKILLS = [
   // Backend Development
   { name: 'Java / Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', category: 'development', level: 90 },
   { name: 'Python / Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg', category: 'development', level: 85 },
-  { name: 'ASP.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg', category: 'development', level: 80 },
-  { name: '.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg', category: 'development', level: 80 },
+  { name: 'ASP.NET / .NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg', category: 'development', level: 80 },
+  { name: 'PHP / Symfony', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg', category: 'development', level: 75 },
 
   // Frontend
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', category: 'frontend', level: 90 },
   { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg', category: 'frontend', level: 85 },
+  { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', category: 'frontend', level: 85 },
+  { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', category: 'frontend', level: 90 },
 
-  // Mobile
+  // Mobile & Game
   { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', category: 'mobile', level: 80 },
   { name: 'Ionic', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg', category: 'mobile', level: 80 },
   { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg', category: 'mobile', level: 80 },
+  { name: 'Unity', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg', category: 'mobile', level: 85 },
+
+  // AI & Data
+  { name: 'Machine Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', category: 'ai', level: 75 },
+  { name: 'Deep Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', category: 'ai', level: 70 },
+  { name: 'Data Mining', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', category: 'ai', level: 75 },
+  { name: 'Big Data', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg', category: 'ai', level: 70 },
 
   // Databases
   { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', category: 'database', level: 85 },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', category: 'database', level: 90 },
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', category: 'database', level: 85 },
+  { name: 'SQLite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', category: 'database', level: 80 },
   { name: 'Oracle', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg', category: 'database', level: 80 },
 
   // Security & Quality
   { name: 'HashiCorp Vault', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg', category: 'security', level: 80 },
   { name: 'Checkov / tfsec', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/checkmarx.svg', category: 'security', level: 80 },
-  { name: 'Unit / Integration Tests', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg', category: 'security', level: 90 },
-  { name: 'BDD / Load Testing', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg', category: 'security', level: 85 },
+  { name: 'pytest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg', category: 'security', level: 85 },
+  { name: 'JUnit', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg', category: 'security', level: 85 },
+  { name: 'Selenium', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg', category: 'security', level: 80 },
+  { name: 'Postman (API Testing)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg', category: 'security', level: 85 },
+];
+
+// Conceptual / methodology skills shown as plain tags (no logo) on the Skills page
+export const ADDITIONAL_EXPERTISE = [
+  'DevSecOps',
+  'Microservices',
+  'REST APIs / RESTful WebServices',
+  'WebSocket',
+  'GitOps',
+  'Test Automation',
+  'Quality Assurance (QA)',
+  'Behavior-Driven Development (BDD)',
+  'Agile Methodologies',
+  'CI/CD',
+  'Cloud Computing',
+  'IoT / Embedded Systems',
+  'Software Development',
 ];
 
 export const PROJECTS = [
@@ -197,6 +227,7 @@ export const SKILLS_BY_CATEGORY = {
   development: SKILLS.filter(skill => skill.category === 'development'),
   frontend: SKILLS.filter(skill => skill.category === 'frontend'),
   mobile: SKILLS.filter(skill => skill.category === 'mobile'),
+  ai: SKILLS.filter(skill => skill.category === 'ai'),
   database: SKILLS.filter(skill => skill.category === 'database'),
   security: SKILLS.filter(skill => skill.category === 'security'),
 };

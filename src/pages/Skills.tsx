@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Layout, Smartphone, Terminal as TerminalIcon } from 'lucide-react';
-import { SKILLS_BY_CATEGORY } from '../data/portfolio';
+import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Layout, Smartphone, BrainCircuit, Terminal as TerminalIcon } from 'lucide-react';
+import { SKILLS_BY_CATEGORY, ADDITIONAL_EXPERTISE } from '../data/portfolio';
 
 export const Skills = () => {
   const [terminalOutput, setTerminalOutput] = useState<string[]>([]);
@@ -62,10 +62,17 @@ export const Skills = () => {
     },
     {
       id: 'mobile',
-      title: 'Mobile Development',
+      title: 'Mobile & Game Dev',
       icon: Smartphone,
       skills: SKILLS_BY_CATEGORY.mobile,
       color: 'text-purple-400',
+    },
+    {
+      id: 'ai',
+      title: 'AI & Data',
+      icon: BrainCircuit,
+      skills: SKILLS_BY_CATEGORY.ai,
+      color: 'text-pink-400',
     },
     {
       id: 'database',
@@ -152,6 +159,7 @@ export const Skills = () => {
                        SKILLS_BY_CATEGORY.development.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.frontend.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.mobile.find(s => s.name.toLowerCase() === skillName) ||
+                       SKILLS_BY_CATEGORY.ai.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.database.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.security.find(s => s.name.toLowerCase() === skillName);
 
@@ -285,6 +293,34 @@ export const Skills = () => {
               );
             })}
           </div>
+
+          {/* Additional Expertise — conceptual / methodology skills */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mt-12 terminal-window"
+          >
+            <div className="terminal-chrome">
+              <span className="ml-1 font-mono text-xs text-neutral-400">cat ~/skills/expertise.txt</span>
+            </div>
+            <div className="p-6">
+              <h3 className="font-display text-lg font-semibold text-primary-500 uppercase tracking-wide mb-4">
+                Additional Expertise
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {ADDITIONAL_EXPERTISE.map((item) => (
+                  <span
+                    key={item}
+                    className="font-mono text-xs px-2.5 py-1 bg-bg-elevated text-accent-500 border border-accent-500/30 rounded-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
