@@ -122,6 +122,17 @@ img {
   animation: float 3s ease-in-out infinite;
 }
 
+/* Gentle, slow vertical drift for the decorative hero logos — no rotation */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float-soft {
+  animation: float-soft 7s ease-in-out infinite;
+  will-change: transform;
+}
+
 .animate-spin-slow {
   animation: spin 8s linear infinite;
 }

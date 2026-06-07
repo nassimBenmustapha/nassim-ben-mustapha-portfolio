@@ -42,7 +42,7 @@ export const Home = () => {
             key={logo.name}
             src={logo.src}
             alt=""
-            className={`absolute ${logo.pos} ${logo.size} object-contain opacity-20 animate-float`}
+            className={`absolute ${logo.pos} ${logo.size} object-contain opacity-20 animate-float-soft`}
             style={{
               animationDelay: logo.delay,
               filter: 'grayscale(100%) brightness(1.6) drop-shadow(0 0 10px rgba(0,230,118,0.35))',
