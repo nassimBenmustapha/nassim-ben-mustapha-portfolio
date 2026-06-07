@@ -52,13 +52,13 @@ export const Home = () => {
       </div>
 
       {/* Main Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         <div className="max-w-4xl mx-auto w-full relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6"
           >
             {/* Boot terminal */}
             <div className="terminal-window mx-auto max-w-2xl shadow-glow-green-sm">
@@ -133,7 +133,7 @@ export const Home = () => {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-neutral-500 animate-bounce">
+        <div className="hidden sm:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-1 text-neutral-500 animate-bounce z-20">
           <span className="font-mono text-xs tracking-widest uppercase">scroll</span>
           <ChevronDown className="h-4 w-4" />
         </div>
