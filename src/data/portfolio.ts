@@ -8,6 +8,7 @@ export const SKILLS = [
   { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', category: 'cloud', level: 85 },
   { name: 'Google Cloud (GCP)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg', category: 'cloud', level: 80 },
   { name: 'Hetzner', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hetzner.svg', category: 'cloud', level: 85 },
+  { name: 'Unity Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg', category: 'cloud', level: 85 },
 
   // Containers & Orchestration
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', category: 'containers', level: 90 },
@@ -92,6 +93,24 @@ export const ADDITIONAL_EXPERTISE = [
 ];
 
 export const PROJECTS = [
+  {
+    title: 'DocExtractor — Orchestration Pipeline',
+    image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Document-processing orchestration pipeline that extracts and structures data from documents with integrated AI models (Ollama, OpenAI, Mistral). Built with Spring Boot + Thymeleaf and MySQL, containerized with Docker behind Traefik, observability via Prometheus & Grafana, and deployed to Azure through a GitLab CI/CD pipeline.',
+    technologies: ['Spring Boot', 'Thymeleaf', 'MySQL', 'Azure', 'Ollama', 'OpenAI', 'Mistral', 'GitLab CI/CD', 'Traefik', 'Prometheus', 'Grafana', 'Docker'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
+    title: 'Al Moghamiroun 1 · 2 · 3 — Educational Mobile Games',
+    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'A trilogy of educational mobile games for children, built in Unity with C#. Published to the Play Store via Google Play Console and automated through Unity Cloud, with automated testing and custom UI/UX assets designed in Photoshop & Illustrator. CI managed through GitLab.',
+    technologies: ['Unity', 'C#', 'Unity Cloud', 'GitLab', 'Google Play Console', 'Test Automation', 'Photoshop', 'Illustrator'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
   {
     title: 'Kubernetes HA Cluster',
     image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
