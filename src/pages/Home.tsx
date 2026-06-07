@@ -17,10 +17,10 @@ export const Home = () => {
 
   // Decorative floating tech logos — one in each corner of the hero
   const floatingLogos = [
-    { name: 'AWS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', pos: 'top-[26%] left-[11%]', size: 'w-20 h-20', delay: '0s' },
-    { name: 'Kubernetes', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', pos: 'top-[26%] right-[11%]', size: 'w-20 h-20', delay: '0.8s' },
-    { name: 'Docker', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', pos: 'bottom-[12%] left-[13%]', size: 'w-20 h-20', delay: '1.6s' },
-    { name: 'Azure', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', pos: 'bottom-[12%] right-[12%]', size: 'w-20 h-20', delay: '0.4s' },
+    { name: 'AWS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', pos: 'top-[22%] left-[10%]', size: 'w-20 h-20', delay: '0s' },
+    { name: 'Kubernetes', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', pos: 'top-[22%] right-[10%]', size: 'w-20 h-20', delay: '0.8s' },
+    { name: 'Docker', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', pos: 'top-[72%] left-[14%]', size: 'w-20 h-20', delay: '1.6s' },
+    { name: 'Azure', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', pos: 'top-[72%] right-[12%]', size: 'w-20 h-20', delay: '0.4s' },
   ];
 
   return (
@@ -31,24 +31,24 @@ export const Home = () => {
       {/* Ambient glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
 
-      {/* Floating tech logos (decorative, fills the empty space) */}
-      <div className="hidden md:block absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-        {floatingLogos.map((logo) => (
-          <img
-            key={logo.name}
-            src={logo.src}
-            alt=""
-            className={`absolute ${logo.pos} ${logo.size} object-contain opacity-20 animate-float-soft`}
-            style={{
-              animationDelay: logo.delay,
-              filter: 'grayscale(100%) brightness(1.6) drop-shadow(0 0 10px rgba(0,230,118,0.35))',
-            }}
-          />
-        ))}
-      </div>
-
       {/* Main Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+        {/* Floating tech logos — one per corner of the hero */}
+        <div className="hidden md:block absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
+          {floatingLogos.map((logo) => (
+            <img
+              key={logo.name}
+              src={logo.src}
+              alt=""
+              className={`absolute ${logo.pos} ${logo.size} object-contain opacity-20 animate-float-soft`}
+              style={{
+                animationDelay: logo.delay,
+                filter: 'grayscale(100%) brightness(1.6) drop-shadow(0 0 10px rgba(0,230,118,0.35))',
+              }}
+            />
+          ))}
+        </div>
+
         <div className="max-w-4xl mx-auto w-full relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
