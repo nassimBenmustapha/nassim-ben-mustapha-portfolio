@@ -107,6 +107,17 @@ export const Home = () => {
               </span>
             </motion.div>
 
+            {/* Scroll hint (above the buttons) */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2.1 }}
+              className="flex flex-col items-center gap-1 text-neutral-500 pt-2"
+            >
+              <span className="font-mono text-xs tracking-widest uppercase">scroll</span>
+              <ChevronDown className="h-4 w-4 animate-bounce" />
+            </motion.div>
+
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -130,12 +141,6 @@ export const Home = () => {
               </Link>
             </motion.div>
           </motion.div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="hidden sm:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-1 text-neutral-500 animate-bounce z-20">
-          <span className="font-mono text-xs tracking-widest uppercase">scroll</span>
-          <ChevronDown className="h-4 w-4" />
         </div>
       </section>
 
