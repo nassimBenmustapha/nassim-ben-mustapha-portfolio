@@ -112,6 +112,15 @@ export const PROJECTS = [
     websiteLink: '',
   },
   {
+    title: 'AWS Cloud Infrastructure — High Availability',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'End-to-end production infrastructure on AWS: a custom VPC with public and private subnets, public/private EC2 instances reachable only through an EC2 Bastion Host over SSH, security groups, and public/private IP addressing. High availability and horizontal scaling via Auto Scaling Groups behind an Application Load Balancer (ALB), serverless functions with Lambda, object storage on S3, and data layers on Amazon RDS and DynamoDB — all provisioned from reusable infrastructure templates.',
+    technologies: ['AWS', 'VPC', 'EC2', 'Security Groups', 'Bastion Host', 'ALB', 'Auto Scaling', 'Lambda', 'S3', 'Amazon RDS', 'DynamoDB', 'CloudFormation'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
     title: 'Kubernetes HA Cluster',
     image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     description: 'Multi-node high-availability Kubernetes cluster provisioned with Terraform & Ansible on Hetzner/AWS. GitOps with ArgoCD, auto-scaling, health checks, and automatic rollback.',
