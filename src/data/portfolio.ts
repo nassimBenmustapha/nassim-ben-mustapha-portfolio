@@ -103,6 +103,15 @@ export const PROJECTS = [
     websiteLink: '',
   },
   {
+    title: 'Data Structuring Engine — Mistral AI',
+    image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Web application that transforms raw, unorganized data into clean, structured database tables using the Mistral AI API. Parsed and normalized content is persisted to MySQL, backed by automated testing and a GitLab CI/CD pipeline.',
+    technologies: ['Mistral AI API', 'AI / ML', 'MySQL', 'GitLab CI/CD', 'Test Automation'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
     title: 'Al Moghamiroun 1 — Educational Mobile Game',
     image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     description: 'Educational mobile game for children (part 1 of the Al Moghamiroun series), built in Unity with C#. Published to the Play Store via Google Play Console and automated through Unity Cloud, with automated testing and custom UI/UX assets designed in Photoshop & Illustrator. CI managed through GitLab.',
