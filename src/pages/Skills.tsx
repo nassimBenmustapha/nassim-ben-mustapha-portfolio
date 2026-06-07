@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Layout, Smartphone, BrainCircuit, Terminal as TerminalIcon } from 'lucide-react';
+import { Cloud, Container, Code, Database, Activity, ShieldCheck, GitBranch, Layout, Smartphone, BrainCircuit, FileCode2, Terminal as TerminalIcon } from 'lucide-react';
 import { SKILLS_BY_CATEGORY, ADDITIONAL_EXPERTISE } from '../data/portfolio';
 
 export const Skills = () => {
@@ -45,6 +45,13 @@ export const Skills = () => {
       icon: GitBranch,
       skills: SKILLS_BY_CATEGORY.devops,
       color: 'text-green-500',
+    },
+    {
+      id: 'languages',
+      title: 'Programming Languages',
+      icon: FileCode2,
+      skills: SKILLS_BY_CATEGORY.languages,
+      color: 'text-yellow-400',
     },
     {
       id: 'development',
@@ -156,6 +163,7 @@ export const Skills = () => {
                        SKILLS_BY_CATEGORY.infrastructure.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.monitoring.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.devops.find(s => s.name.toLowerCase() === skillName) ||
+                       SKILLS_BY_CATEGORY.languages.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.development.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.frontend.find(s => s.name.toLowerCase() === skillName) ||
                        SKILLS_BY_CATEGORY.mobile.find(s => s.name.toLowerCase() === skillName) ||
