@@ -15,16 +15,12 @@ export const Home = () => {
 
   const featuredSkills = SKILLS.slice(0, 6);
 
-  // Decorative floating tech logos that fill the empty space around the hero
+  // Decorative floating tech logos — one in each corner of the hero
   const floatingLogos = [
-    { name: 'AWS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', pos: 'top-[16%] left-[6%]', size: 'w-20 h-20', delay: '0s' },
-    { name: 'Kubernetes', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', pos: 'top-[24%] right-[7%]', size: 'w-16 h-16', delay: '0.6s' },
-    { name: 'Terraform', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', pos: 'top-[46%] left-[3%]', size: 'w-14 h-14', delay: '1.2s' },
-    { name: 'GitLab', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg', pos: 'top-[50%] right-[4%]', size: 'w-14 h-14', delay: '0.3s' },
-    { name: 'Docker', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', pos: 'bottom-[20%] left-[10%]', size: 'w-16 h-16', delay: '0.9s' },
-    { name: 'Azure', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', pos: 'bottom-[16%] right-[11%]', size: 'w-16 h-16', delay: '1.5s' },
-    { name: 'Prometheus', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg', pos: 'top-[12%] left-[28%]', size: 'w-12 h-12', delay: '1.8s' },
-    { name: 'Linux', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg', pos: 'bottom-[24%] right-[28%]', size: 'w-12 h-12', delay: '0.45s' },
+    { name: 'AWS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', pos: 'top-[26%] left-[11%]', size: 'w-20 h-20', delay: '0s' },
+    { name: 'Kubernetes', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', pos: 'top-[26%] right-[11%]', size: 'w-20 h-20', delay: '0.8s' },
+    { name: 'Docker', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', pos: 'bottom-[12%] left-[13%]', size: 'w-20 h-20', delay: '1.6s' },
+    { name: 'Azure', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', pos: 'bottom-[12%] right-[12%]', size: 'w-20 h-20', delay: '0.4s' },
   ];
 
   return (
