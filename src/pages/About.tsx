@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
@@ -5,6 +7,19 @@ import { MapPin, Code, Zap, Award, GraduationCap, Briefcase } from 'lucide-react
 import { ABOUT_TEXT, EXPERIENCE, EDUCATION, CERTIFICATIONS } from '../data/portfolio';
 
 export const About = () => {
+  const location = useLocation();
+
+  // Scroll to the section referenced by the URL hash (e.g. /about#certifications)
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        // small delay so the page has laid out before scrolling
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+      }
+    }
+  }, [location]);
+
   const philosophyPoints = [
     {
       icon: Zap,
@@ -115,7 +130,7 @@ export const About = () => {
       </section>
 
       {/* Experience Timeline */}
-      <section className="py-24 bg-bg-surface/30">
+      <section id="experience" className="py-24 bg-bg-surface/30 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -175,7 +190,7 @@ export const About = () => {
       </section>
 
       {/* Education + Certifications */}
-      <section className="py-24">
+      <section id="certifications" className="py-24 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Education */}

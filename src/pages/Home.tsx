@@ -7,10 +7,10 @@ import { HERO_CONTENT, SKILLS, CONTACT } from '../data/portfolio';
 
 export const Home = () => {
   const stats = [
-    { label: 'Years Experience', value: '5+' },
-    { label: 'Cloud Platforms', value: '3' },
-    { label: 'Projects Delivered', value: '50+' },
-    { label: 'Certifications', value: '10+' },
+    { label: 'Years Experience', value: '5+', to: '/about#experience' },
+    { label: 'Cloud Platforms', value: '3', to: '/skills' },
+    { label: 'Projects Delivered', value: '50+', to: '/projects' },
+    { label: 'Certifications', value: '10+', to: '/about#certifications' },
   ];
 
   const featuredSkills = SKILLS.slice(0, 6);
@@ -128,14 +128,18 @@ export const Home = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.4 }}
                 viewport={{ once: true }}
-                className="terminal-window p-6 text-center transition-all duration-300"
               >
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary-500 text-glow-green mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-neutral-400 font-mono uppercase tracking-widest">
-                  {stat.label}
-                </div>
+                <Link
+                  to={stat.to}
+                  className="terminal-window p-6 text-center block transition-all duration-300 hover:-translate-y-1 hover:shadow-glow-green-sm"
+                >
+                  <div className="font-display text-3xl md:text-4xl font-bold text-primary-500 text-glow-green mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs text-neutral-400 font-mono uppercase tracking-widest">
+                    {stat.label}
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
