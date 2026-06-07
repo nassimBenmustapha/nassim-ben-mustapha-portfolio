@@ -139,6 +139,15 @@ export const PROJECTS = [
     websiteLink: '',
   },
   {
+    title: 'BlurStyle — Multiplayer Racing Game',
+    image: 'https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Multiplayer racing game built in Unity with C#. Uses Unity Cloud and its services for online data persistence (cloud save), Gmail-based authentication, and a global leaderboard ranking the best scores. Version-controlled on GitHub with a Jenkins CI/CD pipeline.',
+    technologies: ['Unity', 'C#', 'Unity Cloud', 'Cloud Save', 'Google Auth', 'Leaderboard', 'GitHub', 'Jenkins CI/CD'],
+    category: 'fullstack',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
     title: 'ERP Platform — PHP / Symfony',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     description: 'Enterprise ERP platform migrated from native PHP to a structured Symfony architecture, with a new Angular front-end and a MySQL database. Optimized the data layer to reduce database issues, implemented automated testing, and shipped through a GitLab CI/CD pipeline with deployment to Azure.',
