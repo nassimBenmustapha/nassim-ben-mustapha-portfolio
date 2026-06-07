@@ -267,7 +267,7 @@ export const EDUCATION = [
   },
   {
     period: '2018 — 2021',
-    title: 'Bachelor in Information Technologies',
+    title: "Bachelor's Degree (Licence) in Information Technologies",
     school: 'ISET Bizerte',
   },
 ];
