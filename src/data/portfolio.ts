@@ -166,6 +166,15 @@ export const PROJECTS = [
     websiteLink: '',
   },
   {
+    title: 'WeatherWatch — AWS Serverless Tracker',
+    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: "Serverless weather application that records each day's weather and displays the history on the site. A scheduled AWS Lambda (triggered by CloudWatch) fetches the daily weather and stores it in DynamoDB, while EC2 instances — public and private behind security groups with public/private IP addressing — serve the web layer. CloudWatch handles scheduling and monitoring.",
+    technologies: ['AWS', 'Lambda', 'DynamoDB', 'CloudWatch', 'EC2', 'Security Groups', 'VPC'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
     title: 'AWS Cloud Infrastructure — High Availability',
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     description: 'End-to-end production infrastructure on AWS: a custom VPC with public and private subnets, public/private EC2 instances reachable only through an EC2 Bastion Host over SSH, security groups, and public/private IP addressing. High availability and horizontal scaling via Auto Scaling Groups behind an Application Load Balancer (ALB), serverless functions with Lambda, object storage on S3, and data layers on Amazon RDS and DynamoDB — all provisioned from reusable infrastructure templates.',
@@ -333,6 +342,7 @@ export const EDUCATION = [
 
 export const CERTIFICATIONS = [
   // In progress (targeted)
+  { name: 'RHCSA — Red Hat Certified System Administrator', issuer: 'Red Hat', date: 'In progress', status: 'in progress' },
   { name: 'CKA — Certified Kubernetes Administrator', issuer: 'The Linux Foundation', date: 'In progress', status: 'in progress' },
   { name: 'PCAP — Python Certified Associate', issuer: 'Python Institute', date: 'In progress', status: 'in progress' },
   { name: 'OCA — Oracle Certified Associate', issuer: 'Oracle', date: 'In progress', status: 'in progress' },
