@@ -171,6 +171,15 @@ export const PROJECTS = [
     websiteLink: '',
   },
   {
+    title: 'ATS System — AI Resume Screening',
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Applicant Tracking System that ingests and scans uploaded CVs and surfaces the candidates who best match a given job description. Combines OCR with the Mistral AI API to parse and rank resumes (stored in PostgreSQL). Recruiters can schedule candidate interviews — sending emails and creating Microsoft Teams meeting planning. Built with Angular + Django, automated testing, a GitLab CI/CD pipeline, and deployed on Azure virtual machines.',
+    technologies: ['Angular', 'Django', 'PostgreSQL', 'OCR', 'Mistral AI API', 'Azure', 'Azure VM', 'Microsoft Teams', 'Email / SMTP', 'GitLab CI/CD', 'Test Automation'],
+    category: 'backend',
+    githubLink: '',
+    websiteLink: '',
+  },
+  {
     title: 'ClarieFile — SaaS Platform',
     image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     description: 'SaaS platform with an intelligent pipeline that scans, groups, and organizes unstructured data (PDFs, images, files) to produce structured digital exports: Excel, JSON, and databases.',
