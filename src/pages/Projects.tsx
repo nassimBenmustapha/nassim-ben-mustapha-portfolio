@@ -4,13 +4,28 @@ import { TerminalHeader } from '../components/TerminalHeader';
 import { ExternalLink, Github, Linkedin, Filter } from 'lucide-react';
 import { PROJECTS_BY_CATEGORY, CONTACT } from '../data/portfolio';
 
+// Category display labels + whether to use the cyan accent (vs green) for the badge
+const CATEGORY_META: Record<string, { label: string; accent: boolean }> = {
+  devops: { label: 'DevOps', accent: false },
+  cloud: { label: 'Cloud', accent: false },
+  backend: { label: 'Backend', accent: true },
+  fullstack: { label: 'Full-Stack', accent: true },
+  frontend: { label: 'Frontend', accent: true },
+  mobile: { label: 'Mobile', accent: true },
+};
+
+const CATEGORY_ORDER = ['devops', 'cloud', 'backend', 'fullstack', 'frontend', 'mobile'];
+
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
+  // "All" + every category that actually has at least one project
   const filters = [
     { id: 'all', label: 'All Projects', count: PROJECTS_BY_CATEGORY.all.length },
-    { id: 'devops', label: 'DevOps', count: PROJECTS_BY_CATEGORY.devops.length },
-    { id: 'fullstack', label: 'Full-Stack', count: PROJECTS_BY_CATEGORY.fullstack.length },
+    ...CATEGORY_ORDER
+      .map((id) => ({ id, count: PROJECTS_BY_CATEGORY[id as keyof typeof PROJECTS_BY_CATEGORY].length }))
+      .filter((c) => c.count > 0)
+      .map((c) => ({ id: c.id, label: CATEGORY_META[c.id].label, count: c.count })),
   ];
 
   const getProjects = () => {
@@ -88,11 +103,11 @@ export const Projects = () => {
                       {project.title}
                     </h3>
                     <span className={`shrink-0 px-2 py-0.5 rounded-sm text-[10px] font-mono uppercase tracking-wider border ${
-                      project.category === 'devops'
-                        ? 'text-primary-500 border-primary-500/30 bg-primary/5'
-                        : 'text-accent-500 border-accent-500/30 bg-accent-500/5'
+                      CATEGORY_META[project.category]?.accent
+                        ? 'text-accent-500 border-accent-500/30 bg-accent-500/5'
+                        : 'text-primary-500 border-primary-500/30 bg-primary/5'
                     }`}>
-                      {project.category === 'devops' ? 'DevOps' : 'Full-Stack'}
+                      {CATEGORY_META[project.category]?.label ?? project.category}
                     </span>
                   </div>
 
