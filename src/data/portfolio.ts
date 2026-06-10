@@ -255,6 +255,17 @@ export const PROJECTS = [
     websiteLink: '',
   },
 
+  // ===== Frontend =====
+  {
+    title: 'SahhaTechlogie — Angular Dashboard UI',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Front-end Angular application for SahhaTechlogie featuring rich data visualizations with Plotly and Chart.js, and a polished UI built on PrimeNG components. Careful management of the Angular component lifecycle for performance, with interface (UI) testing and a GitLab CI pipeline.',
+    technologies: ['Angular', 'TypeScript', 'PrimeNG', 'Chart.js', 'Plotly', 'GitLab', 'UI Testing'],
+    category: 'frontend',
+    githubLink: '',
+    websiteLink: '',
+  },
+
   // ===== Mobile & Game =====
   {
     title: 'Al Moghamiroun 1 — Educational Mobile Game',
