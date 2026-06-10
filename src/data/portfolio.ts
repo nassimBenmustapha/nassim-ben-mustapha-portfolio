@@ -160,6 +160,16 @@ export const PROJECTS = [
     websiteLink: '',
   },
 
+  {
+    title: 'Secure AWS Infra Demo — Mentoring & Security',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Demonstration AWS infrastructure built as code with Terraform, Ansible, and Docker Compose — a custom VPC with public/private subnets, public and private EC2 instances, S3, and Lambda. Created to mentor and lead junior developers: running security and vulnerability checks together and producing reports using security tooling.',
+    technologies: ['AWS', 'Terraform', 'Ansible', 'Docker Compose', 'VPC', 'EC2', 'Public/Private Subnets', 'S3', 'Lambda', 'Security Scanning'],
+    category: 'cloud',
+    githubLink: '',
+    websiteLink: '',
+  },
+
   // ===== Backend =====
   {
     title: 'Data Structuring Engine — Mistral AI',
