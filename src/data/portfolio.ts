@@ -9,6 +9,7 @@ export const SKILLS = [
   { name: 'Google Cloud (GCP)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg', category: 'cloud', level: 80 },
   { name: 'Hetzner', icon: 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hetzner.svg', category: 'cloud', level: 85 },
   { name: 'Unity Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg', category: 'cloud', level: 85 },
+  { name: 'Vercel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg', category: 'cloud', level: 85 },
 
   // Containers & Orchestration
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', category: 'containers', level: 90 },
