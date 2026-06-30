@@ -141,6 +141,16 @@ export const PROJECTS = [
     websiteLink: '',
   },
 
+  {
+    title: 'Kubespray Cluster Automation — Ansible Playbooks',
+    image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Ansible playbooks (Kubespray) to install, repair, and reset a Kubernetes cluster. Provisions reproducible VM nodes with Vagrant on VirtualBox, configures them over SSH, and orchestrates the full cluster lifecycle — automated through GitLab CI.',
+    technologies: ['Ansible', 'Kubespray', 'Kubernetes', 'Vagrant', 'VirtualBox', 'GitLab', 'SSH'],
+    category: 'devops',
+    githubLink: '',
+    websiteLink: '',
+  },
+
   // ===== Cloud =====
   {
     title: 'WeatherWatch — AWS Serverless Tracker',
